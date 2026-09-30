@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#098f92" />
+  <meta name="description" content="Aqui no Pet Goiabeiras: pet shop, hospital veterinário, banho e tosa e farmácia veterinária em Cuiabá." />
+  <title>Aqui no Pet Goiabeiras | Cuidado completo para o seu pet</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="topbar" id="topbar">
+    <a class="brand" href="#inicio" aria-label="Aqui no Pet Goiabeiras - início">
+      <img src="logo.png" alt="Aqui no Pet" class="brand__logo" />
+      <span class="brand__copy"><b>Aqui no Pet</b><small>Goiabeiras</small></span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menuOverlay">
+      <i data-lucide="menu" aria-hidden="true"></i>
+    </button>
+  </header>
+
+  <div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+    <div class="menu-backdrop" data-close-menu></div>
+    <nav class="menu-panel" aria-label="Navegação principal">
+      <div class="menu-panel__head">
+        <span>Menu</span>
+        <button class="menu-close" type="button" aria-label="Fechar menu" data-close-menu>
+          <i data-lucide="x" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="menu-links">
+        <a href="#inicio" data-menu-link><span>01</span>Início</a>
+        <a href="#servicos" data-menu-link><span>02</span>Serviços</a>
+        <a href="#estrutura" data-menu-link><span>03</span>Estrutura</a>
+        <a href="#avaliacoes" data-menu-link><span>04</span>Avaliações</a>
+        <a href="#contato" data-menu-link><span>05</span>Contato</a>
+      </div>
+      <div class="menu-panel__foot">
+        <a href="https://www.instagram.com/aquinopetgoiabeiras/" target="_blank" rel="noopener">Instagram <i data-lucide="arrow-up-right"></i></a>
+        <a href="tel:+556530440000">(65) 3044-0000</a>
+      </div>
+    </nav>
+  </div>
+
+  <main>
+    <section class="hero section-shell" id="inicio">
+      <div class="hero__copy reveal">
+        <div class="eyebrow"><span class="eyebrow__dot"></span>Cuidado completo em Cuiabá</div>
+        <h1>Seu pet merece um lugar que cuide de <em>tudo.</em></h1>
+        <p class="hero__lead">Pet shop, hospital veterinário, banho e tosa e farmácia em um só endereço, com atendimento acolhedor e estrutura completa.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="https://wa.me/556530440000?text=Ol%C3%A1%21%20Gostaria%20de%20falar%20com%20a%20Aqui%20no%20Pet%20Goiabeiras." target="_blank" rel="noopener">
+            <img src="whatsapp.png" alt="" /> Falar no WhatsApp
+          </a>
+          <a class="btn btn--ghost" href="#servicos">Conhecer serviços <i data-lucide="arrow-down"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal reveal--delay">
+        <div class="hero-card hero-card--back" aria-hidden="true"></div>
+        <figure class="hero-card hero-card--photo">
+          <img src="fachada.webp" alt="Fachada da Aqui no Pet Goiabeiras" />
+          <figcaption>
+            <span class="rating"><b>4,6</b><span class="stars">★★★★★</span></span>
+            <span>106 avaliações no Google</span>
+          </figcaption>
+        </figure>
+        <div class="hero-badge hero-badge--top"><i data-lucide="heart-pulse"></i><span><b>Veterinário</b><small>atendimento completo</small></span></div>
+        <div class="hero-badge hero-badge--bottom"><i data-lucide="truck"></i><span><b>Entrega grátis</b><small>Cuiabá e Várzea Grande</small></span></div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Principais serviços">
+      <div class="ticker__track">
+        <span>Hospital veterinário</span><b>•</b><span>Banho &amp; tosa</span><b>•</b><span>Farmácia veterinária</span><b>•</b><span>Pet shop completo</span><b>•</b><span>Entrega grátis</span><b>•</b>
+        <span aria-hidden="true">Hospital veterinário</span><b aria-hidden="true">•</b><span aria-hidden="true">Banho &amp; tosa</span><b aria-hidden="true">•</b><span aria-hidden="true">Farmácia veterinária</span><b aria-hidden="true">•</b><span aria-hidden="true">Pet shop completo</span><b aria-hidden="true">•</b><span aria-hidden="true">Entrega grátis</span><b aria-hidden="true">•</b>
+      </div>
+    </section>
+
+    <section class="services section-shell" id="servicos">
+      <div class="section-heading reveal">
+        <div class="eyebrow">Tudo no mesmo lugar</div>
+        <h2>Quatro frentes de cuidado.<br><span>Uma equipe só.</span></h2>
+        <p>Da rotina ao imprevisto, você encontra suporte para cuidar do seu melhor amigo sem precisar atravessar a cidade atrás de cada serviço.</p>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card reveal">
+          <div class="service-card__icon"><i data-lucide="stethoscope"></i></div>
+          <span class="service-card__num">01</span>
+          <h3>Hospital veterinário</h3>
+          <p>Consultas, internação, cirurgias, procedimentos ambulatoriais e exames laboratoriais e de imagem.</p>
+          <div class="service-card__line"></div>
+        </article>
+        <article class="service-card reveal reveal--delay-sm">
+          <div class="service-card__icon"><i data-lucide="scissors"></i></div>
+          <span class="service-card__num">02</span>
+          <h3>Banho e tosa</h3>
+          <p>Cuidados de higiene e estética feitos com atenção, conforto e respeito ao ritmo de cada pet.</p>
+          <div class="service-card__line"></div>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-card__icon"><i data-lucide="pill"></i></div>
+          <span class="service-card__num">03</span>
+          <h3>Farmácia veterinária</h3>
+          <p>Itens essenciais para continuar o cuidado em casa, com praticidade e orientação.</p>
+          <div class="service-card__line"></div>
+        </article>
+        <article class="service-card reveal reveal--delay-sm">
+          <div class="service-card__icon"><i data-lucide="shopping-bag"></i></div>
+          <span class="service-card__num">04</span>
+          <h3>Pet shop completo</h3>
+          <p>Produtos para cães e gatos, acessórios, itens de rotina e entrega grátis em Cuiabá e Várzea Grande.</p>
+          <div class="service-card__line"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="feature-band">
+      <div class="section-shell feature-band__inner">
+        <div class="feature-band__copy reveal">
+          <span class="eyebrow eyebrow--light">Aqui, cuidado tem contexto</span>
+          <h2>Um espaço pensado para resolver o dia do seu pet por inteiro.</h2>
+        </div>
+        <div class="feature-band__stats reveal reveal--delay">
+          <div><b>4,6</b><span>nota no Google</span></div>
+          <div><b>106</b><span>avaliações</span></div>
+          <div><b>12h</b><span>de atendimento seg. a sex.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery section-shell" id="estrutura">
+      <div class="section-heading section-heading--row reveal">
+        <div>
+          <div class="eyebrow">Por dentro da Aqui no Pet</div>
+          <h2>Estrutura que dá <span>tranquilidade.</span></h2>
+        </div>
+        <div class="carousel-buttons" aria-label="Controles da galeria">
+          <button type="button" data-carousel-prev="galleryTrack" aria-label="Foto anterior"><i data-lucide="arrow-left"></i></button>
+          <button type="button" data-carousel-next="galleryTrack" aria-label="Próxima foto"><i data-lucide="arrow-right"></i></button>
+        </div>
+      </div>
+
+      <div class="photo-carousel carousel" id="galleryTrack" data-carousel>
+        <figure class="photo-card">
+          <img src="loja-01.webp" alt="Interior da Aqui no Pet com produtos para animais" loading="lazy" />
+          <figcaption><span>Loja completa</span><small>Produtos e acessórios</small></figcaption>
+        </figure>
+        <figure class="photo-card">
+          <img src="loja-02.webp" alt="Área interna da Aqui no Pet" loading="lazy" />
+          <figcaption><span>Ambiente preparado</span><small>Conforto e praticidade</small></figcaption>
+        </figure>
+        <figure class="photo-card">
+          <img src="loja-03.webp" alt="Exposição de caixas de transporte e acessórios" loading="lazy" />
+          <figcaption><span>Variedade de verdade</span><small>Escolhas para diferentes rotinas</small></figcaption>
+        </figure>
+        <figure class="photo-card photo-card--facade">
+          <img src="fachada.webp" alt="Fachada da Aqui no Pet Goiabeiras em Cuiabá" loading="lazy" />
+          <figcaption><span>Goiabeiras, Cuiabá</span><small>R. Mal. Mascarenhas de Morães, 254</small></figcaption>
+        </figure>
+      </div>
+      <div class="carousel-dots" data-dots-for="galleryTrack" aria-hidden="true"></div>
+    </section>
+
+    <section class="reviews-wrap" id="avaliacoes">
+      <div class="section-shell reviews">
+        <div class="reviews__top reveal">
+          <div>
+            <div class="eyebrow">Quem já passou por aqui</div>
+            <h2>Cuidado que vira <span>confiança.</span></h2>
+          </div>
+          <div class="review-score">
+            <b>4,6</b>
+            <span class="stars stars--dark">★★★★★</span>
+            <small>106 avaliações</small>
+          </div>
+        </div>
+
+        <div class="review-carousel carousel reveal" id="reviewTrack" data-carousel>
+          <article class="review-card">
+            <div class="review-card__stars">★★★★★</div>
+            <p>“Maravilhoso o atendimento! Minha au-au foi super bem cuidada, tudo humanizado e com pessoas empáticas. Muito feliz e satisfeita.”</p>
+            <footer><span>Carolina Taques</span><small>Avaliação no Google</small></footer>
+          </article>
+          <article class="review-card">
+            <div class="review-card__stars">★★★★★</div>
+            <p>“Excelente experiência! Ótimo atendimento, equipe atenciosa e prestação de serviço de qualidade. Recomendo o Aqui no Pet Goiabeiras.”</p>
+            <footer><span>Eliel C. Silva Junior</span><small>Avaliação no Google</small></footer>
+          </article>
+          <article class="review-card">
+            <div class="review-card__stars">★★★★★</div>
+            <p>“Atendimento super profissional, encontrei tudo que precisava. Super recomendo.”</p>
+            <footer><span>Creidson Mendes Oliveira</span><small>Avaliação no Google</small></footer>
+          </article>
+        </div>
+        <div class="carousel-dots" data-dots-for="reviewTrack" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="contact section-shell" id="contato">
+      <div class="contact-card reveal">
+        <div class="contact-card__copy">
+          <div class="eyebrow eyebrow--light">Visite a gente</div>
+          <h2>Seu pet já tem endereço certo em Goiabeiras.</h2>
+          <p>R. Mal. Mascarenhas de Morães, 254<br>Duque de Caxias II, Cuiabá - MT</p>
+          <div class="contact-list">
+            <div><i data-lucide="clock-3"></i><span><b>Segunda a sexta</b><small>07:00 às 19:00</small></span></div>
+            <div><i data-lucide="calendar-days"></i><span><b>Sábado</b><small>07:00 às 14:00</small></span></div>
+            <div><i data-lucide="phone"></i><span><b>Telefone</b><small>(65) 3044-0000</small></span></div>
+          </div>
+          <div class="contact-actions">
+            <a class="btn btn--yellow" href="https://maps.app.goo.gl/V2MDtxKWuQMaBe4S9?g_st=ac" target="_blank" rel="noopener">Abrir no Maps <i data-lucide="map-pin"></i></a>
+            <a class="btn btn--line-light" href="https://www.instagram.com/aquinopetgoiabeiras/" target="_blank" rel="noopener">Instagram <i data-lucide="instagram"></i></a>
+          </div>
+        </div>
+        <a class="map-preview" href="https://maps.app.goo.gl/V2MDtxKWuQMaBe4S9?g_st=ac" target="_blank" rel="noopener" aria-label="Abrir localização no Google Maps">
+          <iframe title="Mapa da Aqui no Pet Goiabeiras" src="https://www.google.com/maps?q=-15.5876125,-56.1108621&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" tabindex="-1"></iframe>
+          <span class="map-preview__label"><i data-lucide="map-pin"></i>Aqui no Pet Goiabeiras</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="final-cta section-shell reveal">
+      <div class="final-cta__paw" aria-hidden="true">✦</div>
+      <p>Precisa de atendimento, produtos ou quer tirar uma dúvida?</p>
+      <h2>Fale com a equipe da Aqui no Pet.</h2>
+      <a class="btn btn--primary btn--large" href="https://wa.me/556530440000?text=Ol%C3%A1%21%20Gostaria%20de%20falar%20com%20a%20Aqui%20no%20Pet%20Goiabeiras." target="_blank" rel="noopener">
+        <img src="whatsapp.png" alt="" /> Chamar no WhatsApp
+      </a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="section-shell footer__inner">
+      <div class="footer__brand">
+        <img src="logo.png" alt="Aqui no Pet" />
+        <p>Pet shop e hospital veterinário em Cuiabá.</p>
+      </div>
+      <div class="footer__links">
+        <a href="#servicos">Serviços</a>
+        <a href="#estrutura">Estrutura</a>
+        <a href="#avaliacoes">Avaliações</a>
+        <a href="#contato">Contato</a>
+      </div>
+      <div class="footer__meta">
+        <span>© 2026 Aqui no Pet Goiabeiras</span>
+        <a href="#inicio">Voltar ao topo <i data-lucide="arrow-up"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="floating-wa" href="https://wa.me/556530440000?text=Ol%C3%A1%21%20Gostaria%20de%20falar%20com%20a%20Aqui%20no%20Pet%20Goiabeiras." target="_blank" rel="noopener" aria-label="Falar com a Aqui no Pet no WhatsApp">
+    <img src="whatsapp.png" alt="" />
+  </a>
+</body>
+</html>
